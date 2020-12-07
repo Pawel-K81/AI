@@ -13,15 +13,21 @@
     12. code ~/.gitconfig    opens the repositorium configuration file and allowes you to do some changes if its needed
     13. git config --global --unset core.editor     - it will remove core aditor settings
     14. git config --global --set core.editor  - it will add something to git congfiguration
-<<<<<<< HEAD
     15. git config --global core.editor "code --wait"   it will add a flag to git and git will wait until the message is created and file is closedgit 
     16. git show HEAD     it will show only head details, you can use it also to ID of different commits as well
     17. git checkout data_cleaner.py - to correct the file which was just addedd and fix something what was wrong. if it,s commited its too late
-    18. git checkout 'id of a commit' and it will return back to the backword commit
-    19. git checkout 'master'  and it will return back to master
-    20. 
+    18. git checkout 'id of a commit' and it will return back to the backword commit. checkout is like read safe option to check changes
+    19. git checkout 'master'  and it will return back to master. Checkout command is like read only
+    20. git revert 'id of the commit which we want to change'
+    21. git reset --mixed  or soft or hard        - totally change the commit in the past, very carefully
+    22. git reser --mixed ;file id     ;remove from the history and also in unstaged files
+    23. git reset --soft 'id of file'    - data are staged 
+    24. git reset --soft 'id of a file'   - file will be totally dillited
+    25. .gitignore -- this is an index of files with untracked filed by git. If we will specify in this file name of the file starting with "/" which should not be tracked, git will ignor it
+    26. git rm -r --cached     it will remove casched files whch were in casch befir doing them untracked
+    27. git reset .      it allowes to keep the latest version in cash
+    28. git remote add origin https://github.com/Pawel-K81/AI.git     dodaje zdalne repozytorium
+    29. git push origin master        it push all the changes to Gigit
 
-=======
->>>>>>> parent of a62e51f (additional commands)
 
 </body>
